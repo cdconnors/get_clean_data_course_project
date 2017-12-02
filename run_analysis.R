@@ -58,4 +58,6 @@ names(tidy_avg)[3:68] <- paste(names(tidy_avg)[3:68], "Avg_by_Subj_activity")
 write.csv(tidy_data, "tidy_data.csv")
 write.csv(tidy_avg, "tidy_averages.csv")
 
+write.table(tidy_avg, "tidy_averages.txt", row.names = FALSE)
+
 
